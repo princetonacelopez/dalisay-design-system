@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dalisay: Input</title>
+        <link rel="stylesheet" href="input.css">
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <h1>Inputs</h1>
+                <h2>Form</h2>
+                <form
+                    style="width: 100vw;display: flex; justify-content: center; align-items: center; flex-direction: column; gap: .5rem;">
+                    <label for="inp-name">Name</label>
+                    <div class="form-group">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                        </svg>
+                        <input id="inp-name" type="text" min="4" max="40" placeholder="Type name" required />
+                    </div>
+                    <label for="inp-email">Email</label>
+                    <input id="inp-email" type="email" placeholder="Type email" required />
+                    <label for="inp-password">Password</label>
+                    <input id="inp-password" type="password" min="4" max="20" pattern="[a-z]+"
+                        placeholder="Type password" required />
+                    <label for="inp-color">Color</label>
+                    <input type="color" name="" id="inp-color">
+                    <label for="inp-email">Date</label>
+                    <input id="inp-email" type="date" disabled />
+                    <label for="inp-email">Time</label>
+                    <input id="inp-email" type="time" />
+                    <label for="exampleDataList" class="form-label">Datalist example</label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                    </datalist>
+                    <label for="txt-bio">Bio</label>
+                    <textarea name="name" id="txt-bio" class="form-control" cols="30" rows="10"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+
+</html>
